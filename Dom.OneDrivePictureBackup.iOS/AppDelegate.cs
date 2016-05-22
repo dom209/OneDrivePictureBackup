@@ -9,6 +9,7 @@ namespace Dom.OneDrivePictureBackup.iOS
     public class AppDelegate : UIApplicationDelegate
     {
         // class-level declarations
+        HomeViewController viewController;
 
         public override UIWindow Window
         {
@@ -22,7 +23,7 @@ namespace Dom.OneDrivePictureBackup.iOS
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
             // If you have defined a root view controller, set it here:
-            // Window.RootViewController = myViewController;
+            Window.RootViewController = new HomeViewController();
 
             // make the window visible
             Window.MakeKeyAndVisible();
